@@ -1,0 +1,28 @@
+import java.awt.Label;
+
+
+public class Prime {
+	
+	public static void primeCount(int n){
+		//int count = 0;
+		
+		outer:
+		for(int i = 3; i <= n; i++){
+			for(int j = 2; (int)j <= Math.sqrt(n);j++){
+				if(i%j == 0) {
+				
+					continue outer;
+				}
+		
+			}
+			System.out.println(i);
+		}
+		
+	
+	}
+	
+	public static void main(String[] args){
+	primeCount(100);
+	}
+
+}
